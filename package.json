@@ -1,0 +1,30 @@
+{
+  "name": "puppeteer-ci-driver-win64",
+  "version": "1.0.0",
+  "description": "Puppeteer chrome drivers for restricted Win64 based CI environments",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edmundackah/puppeteer-ci-driver"
+  },
+  "main": "install.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cross-env WIN_CI_DRIVER_SKIP_SETUP='false' npx ts-node install.ts"
+  },
+  "keywords": [
+    "devops",
+    "gitlab-ci",
+    "puppeteer"
+  ],
+  "author": "Edmund A",
+  "license": "ISC",
+  "dependencies": {
+    "extract-zip": "^2.0.1",
+    "split-file": "^2.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
