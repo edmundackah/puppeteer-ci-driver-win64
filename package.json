@@ -1,6 +1,6 @@
 {
   "name": "puppeteer-ci-driver-win64",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Puppeteer chrome drivers for restricted Win64 based CI environments",
   "repository": {
     "type": "git",
@@ -9,7 +9,7 @@
   "main": "install.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "cross-env WIN_CI_DRIVER_SKIP_SETUP='false' npx ts-node install.ts"
+    "postinstall": "npx ts-node install.ts"
   },
   "keywords": [
     "devops",
