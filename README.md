@@ -6,7 +6,7 @@ Puppeteer chrome drivers for restricted Win64 based CI environments
 > Note: This library will only install in a Linux64 based system.
 
 ```bash
-npm install puppeteer-ci-driver
+npm install puppeteer-ci-driver-win64
 ```
 
 The default installation location is `/driver` folder at your project root. You can set your own path using `PUPPETEER_DRIVER_PATH_WIN64` environment variable.
